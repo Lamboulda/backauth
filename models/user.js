@@ -18,6 +18,11 @@ const userSchema = new Schema({
         type : String,
         required : true,
     },
+    image :{
+        type : String,
+        required : true,
+        default : ''
+    }
 })
 
 export default mongoose.model('User', userSchema)
